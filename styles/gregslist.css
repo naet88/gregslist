@@ -9,6 +9,7 @@ nav {
 	margin-right: 30px;
 	margin-left: 30px;
 	font-size: 18px;
+	position: relative;
 	/*vertical-align: middle;*/
 }
 
@@ -26,6 +27,8 @@ nav {
 .container-links {
 	text-align: right;
 	display: inline-block;
+	position: absolute;
+	right: 0px;
 }
 
 ul {

@@ -1,4 +1,4 @@
-nav {
+.top-nav {
 	background-color: #D3D3D3;
 	width: 100%;
 	height: 40px;
@@ -10,7 +10,8 @@ nav {
 	margin-left: 30px;
 	font-size: 18px;
 	position: relative;
-	/*vertical-align: middle;*/
+	line-height: 40px;
+	vertical-align: middle;
 }
 
 .logo  {
@@ -31,27 +32,33 @@ nav {
 	right: 0px;
 }
 
-ul {
-	list-style: none;
-	
-}
-
-.nav-link {
+.nav-link, .nav-link1 {
 	position: relative;
 	display: inline-block;
+	margin: 0px;
+	padding-left: 0px;
 }
 
-a:link {
+.nav-link1 {
+	margin-right: 10px;
+}
+
+
+nav a:link {
 	color: purple;
 }
 
 /* end navigation */
-
-
-.container-main {
+.main {
 	margin-left: 100px;
 	margin-right: 100px;
+}
+	
 
+.container-search {
+	position: relative;
+	/*margin-left: 100px;
+	margin-right: 100px;*/
 }
 
 /* begin form */
@@ -60,6 +67,8 @@ a:link {
 .container-form {
 	width: 600px;
 	display: inline-block;
+	position: absolute;
+	top: 100px;
 }
 
 input[type=text] {
@@ -67,12 +76,100 @@ input[type=text] {
 	padding: 12px 20px;
 	display: inline-block;
 	vertical-align: middle;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
 }
 
 input[type=image] {
 	display:inline-block;
-	height: 50px;
+	height: 44px;
 	vertical-align: middle;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
 }
 
+/* end form */
 
+.container-controls {
+	position: relative;
+}
+
+.controls {
+	display: inline-block;
+	position: absolute;
+	top: 200px;
+	list-style-type: none;
+	font-size: 0px;
+	padding-left: 0px;
+/*	border: 1px solid #D3D3D3;
+	border-radius: 4px;	
+	padding: 10px;*/
+}
+
+.control-style1, .control-style2, .control-style3 {
+	display: inline-block;
+	border: 1px solid #D3D3D3;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+/*	border-right-color: blue;
+	border-right-style: solid;
+	border-right-width: 1px;*/
+	line-height: 100%;
+	font-size: 15px;
+}
+
+.control-style1 {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-right-style: none;
+}
+
+.control-style3 {
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left-style: none;
+}
+
+.controls a:link {
+	color: black;
+}
+/* job results */
+
+.container-results {
+	position: relative;
+}
+
+.results {
+	display: inline-block;
+	position: absolute;
+	top: 300px;
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.list-date {
+	margin-right: 10px;
+	color: #D3D3D3;
+
+}
+
+.list-location {
+	margin-left: 10px;
+	color: #D3D3D3;
+}
+
+.list-job {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: 900;
+}
+
+.results a:link {
+	color: blue;
+}
+
+.list-style {
+	margin-top: 10px;
+}
